@@ -24,11 +24,20 @@ def ploRomb(a,b):
     return a*b*0.5      #площадь ромба
 
 def ploCircle(r):
-    return math.pi * (r**2)     #площадь круга
+    return round(math.pi * (r**2), 2)     #площадь круга
 
 def perCircle(r):
-    return 2 * r * math.pi      #периметр круга
+    return round(2 * r * math.pi, 2)      #периметр круга
 
 def ploTrap(a, b, h):
     return ((a + b) / 2) * h    #площадь трапеции
+
+def ploCilinder(r,h):
+    return round(math.pi * (r**2) * h, 2)     #объем циилиндра
+
+def ploPara(a,b,c):
+    return a*b*c    #Площадь параллелепипеда
+
+def ploSphere(r):
+    return round((4/3) * (r**3) * math.pi, 2)   #площадь Сферы
 
